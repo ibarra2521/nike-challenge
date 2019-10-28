@@ -19,6 +19,9 @@
 		F342AB532363ECD5001BFA6A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342AB4C2363ECD5001BFA6A /* HomeRouter.swift */; };
 		F342AB542363ECD5001BFA6A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342AB4D2363ECD5001BFA6A /* HomeViewController.swift */; };
 		F342AB552363ECD5001BFA6A /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342AB4E2363ECD5001BFA6A /* HomeInteractor.swift */; };
+		F35A70CA2366E9CB001FC52C /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A70C92366E9CB001FC52C /* CustomImageView.swift */; };
+		F35A70CC2366EA35001FC52C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A70CB2366EA35001FC52C /* ImageCache.swift */; };
+		F35A70CE2366EB61001FC52C /* AlbumDetailViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A70CD2366EB61001FC52C /* AlbumDetailViewController+extensions.swift */; };
 		F37D685B2363F366002D9BA4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D685A2363F366002D9BA4 /* Response.swift */; };
 		F37D685D2363F400002D9BA4 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D685C2363F400002D9BA4 /* Feed.swift */; };
 		F37D685F2363F4A3002D9BA4 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D685E2363F4A3002D9BA4 /* Author.swift */; };
@@ -31,6 +34,10 @@
 		F37D6870236413B2002D9BA4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D686F236413B2002D9BA4 /* UIView.swift */; };
 		F37D687323641683002D9BA4 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D687223641683002D9BA4 /* AlbumCell.swift */; };
 		F37D687523642083002D9BA4 /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D687423642083002D9BA4 /* HomeViewController+TableView.swift */; };
+		F37D688E2364D6F5002D9BA4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D688D2364D6F5002D9BA4 /* DetailView.swift */; };
+		F3FAE0BF236507610036E0CA /* AlbumDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FAE0B8236507610036E0CA /* AlbumDetailRouter.swift */; };
+		F3FAE0C0236507610036E0CA /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FAE0B9236507610036E0CA /* AlbumDetailViewController.swift */; };
+		F3FAE0C1236507610036E0CA /* AlbumDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FAE0BA236507610036E0CA /* AlbumDetailInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,9 @@
 		F342AB4C2363ECD5001BFA6A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		F342AB4D2363ECD5001BFA6A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F342AB4E2363ECD5001BFA6A /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		F35A70C92366E9CB001FC52C /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F35A70CB2366EA35001FC52C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		F35A70CD2366EB61001FC52C /* AlbumDetailViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumDetailViewController+extensions.swift"; sourceTree = "<group>"; };
 		F37D685A2363F366002D9BA4 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		F37D685C2363F400002D9BA4 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		F37D685E2363F4A3002D9BA4 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
@@ -72,6 +82,10 @@
 		F37D686F236413B2002D9BA4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F37D687223641683002D9BA4 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		F37D687423642083002D9BA4 /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
+		F37D688D2364D6F5002D9BA4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F3FAE0B8236507610036E0CA /* AlbumDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailRouter.swift; sourceTree = "<group>"; };
+		F3FAE0B9236507610036E0CA /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		F3FAE0BA236507610036E0CA /* AlbumDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +160,8 @@
 		F342AB482363EB3C001BFA6A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F342AB592363EE6E001BFA6A /* Presentation */,
-				F342AB582363EE66001BFA6A /* Domain */,
-				F342AB572363EE60001BFA6A /* Data */,
+				F37D68762364D571002D9BA4 /* Home */,
+				F37D68772364D57F002D9BA4 /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -209,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				F37D686A236400C5002D9BA4 /* Loading.swift */,
+				F35A70C92366E9CB001FC52C /* CustomImageView.swift */,
+				F35A70CB2366EA35001FC52C /* ImageCache.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +241,52 @@
 			children = (
 				F37D686C23641266002D9BA4 /* AlbumView.swift */,
 				F37D687223641683002D9BA4 /* AlbumCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F37D68762364D571002D9BA4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F342AB592363EE6E001BFA6A /* Presentation */,
+				F342AB582363EE66001BFA6A /* Domain */,
+				F342AB572363EE60001BFA6A /* Data */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F37D68772364D57F002D9BA4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F37D688A2364D616002D9BA4 /* Presentation */,
+				F37D68892364D60C002D9BA4 /* Domain */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F37D68892364D60C002D9BA4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F3FAE0BA236507610036E0CA /* AlbumDetailInteractor.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F37D688A2364D616002D9BA4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F37D688C2364D6E2002D9BA4 /* Views */,
+				F3FAE0B8236507610036E0CA /* AlbumDetailRouter.swift */,
+				F3FAE0B9236507610036E0CA /* AlbumDetailViewController.swift */,
+				F35A70CD2366EB61001FC52C /* AlbumDetailViewController+extensions.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F37D688C2364D6E2002D9BA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F37D688D2364D6F5002D9BA4 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,19 +392,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F342AB2A2363DD05001BFA6A /* ViewController.swift in Sources */,
+				F3FAE0BF236507610036E0CA /* AlbumDetailRouter.swift in Sources */,
 				F37D686B236400C5002D9BA4 /* Loading.swift in Sources */,
 				F37D687523642083002D9BA4 /* HomeViewController+TableView.swift in Sources */,
 				F342AB262363DD05001BFA6A /* AppDelegate.swift in Sources */,
+				F3FAE0C0236507610036E0CA /* AlbumDetailViewController.swift in Sources */,
 				F342AB532363ECD5001BFA6A /* HomeRouter.swift in Sources */,
 				F342AB542363ECD5001BFA6A /* HomeViewController.swift in Sources */,
 				F37D68682363FEE9002D9BA4 /* NetworkManager.swift in Sources */,
+				F3FAE0C1236507610036E0CA /* AlbumDetailInteractor.swift in Sources */,
 				F37D685D2363F400002D9BA4 /* Feed.swift in Sources */,
 				F37D687323641683002D9BA4 /* AlbumCell.swift in Sources */,
+				F35A70CC2366EA35001FC52C /* ImageCache.swift in Sources */,
 				F37D685B2363F366002D9BA4 /* Response.swift in Sources */,
 				F37D685F2363F4A3002D9BA4 /* Author.swift in Sources */,
 				F342AB522363ECD5001BFA6A /* HomeUseCases.swift in Sources */,
 				F342AB282363DD05001BFA6A /* SceneDelegate.swift in Sources */,
 				F37D68642363F6C8002D9BA4 /* Genres.swift in Sources */,
+				F37D688E2364D6F5002D9BA4 /* DetailView.swift in Sources */,
 				F37D686D23641266002D9BA4 /* AlbumView.swift in Sources */,
 				F37D6870236413B2002D9BA4 /* UIView.swift in Sources */,
 				F37D68662363F770002D9BA4 /* Links.swift in Sources */,
@@ -351,6 +417,8 @@
 				F342AB552363ECD5001BFA6A /* HomeInteractor.swift in Sources */,
 				F342AB512363ECD5001BFA6A /* HomeWorker.swift in Sources */,
 				F342AB502363ECD5001BFA6A /* HomePresenter.swift in Sources */,
+				F35A70CA2366E9CB001FC52C /* CustomImageView.swift in Sources */,
+				F35A70CE2366EB61001FC52C /* AlbumDetailViewController+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FYVM8W5U8;
 				INFOPLIST_FILE = "Albums-Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -520,6 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FYVM8W5U8;
 				INFOPLIST_FILE = "Albums-Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -13,8 +13,8 @@ open class Loading {
     // MARK: - Properties
     internal static var spinner: UIActivityIndicatorView?
     public static var style: UIActivityIndicatorView.Style = .large
-    public static var baseBackColor = UIColor.black.withAlphaComponent(0.5)
-    public static var baseColor = UIColor.black
+    public static var baseBackColor = UIColor.orange.withAlphaComponent(0.2)
+    public static var baseColor = UIColor.orange
     
     // MARK: - Public methods
     public static func start(style: UIActivityIndicatorView.Style = style, backColor: UIColor = baseBackColor, baseColor: UIColor = baseColor) {
