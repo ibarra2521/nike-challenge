@@ -65,9 +65,10 @@ class DetailView: UIView {
     fileprivate let copyRightValue = UILabel()
     fileprivate var itunesUrlValue = String()
     fileprivate var openButton = UIButton()
+    fileprivate let k = Constants.self
     
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIView.noIntrinsicMetric, height: 100)
+        return CGSize(width: UIView.noIntrinsicMetric, height: k.height100)
     }
     
     override func willMove(toSuperview newSuperview: UIView?) {
@@ -79,25 +80,25 @@ class DetailView: UIView {
     func setup() {
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
-        titleLabel.numberOfLines = 0
+        titleLabel.numberOfLines = k.zero
         titleLabel.textAlignment = .center
-        titleLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        titleLabel.font = UIFont.systemFont(ofSize: k.size24, weight: .bold)
         
         artistLabel.text = "Artist: "
-        artistLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        artistValue.numberOfLines = 0
+        artistLabel.font = UIFont.systemFont(ofSize: k.size16, weight: .bold)
+        artistValue.numberOfLines = k.zero
 
         genreLabel.text = "Genre: "
-        genreLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        genreValue.numberOfLines = 0
+        genreLabel.font = UIFont.systemFont(ofSize: k.size16, weight: .bold)
+        genreValue.numberOfLines = k.zero
         
         releaseLabel.text = "Release Date: "
-        releaseLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        releaseValue.numberOfLines = 0
+        releaseLabel.font = UIFont.systemFont(ofSize: k.size16, weight: .bold)
+        releaseValue.numberOfLines = k.zero
 
         copyRightLabel.text = "Copyright: "
-        copyRightLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        copyRightValue.numberOfLines = 0
+        copyRightLabel.font = UIFont.systemFont(ofSize: k.size16, weight: .bold)
+        copyRightValue.numberOfLines = k.zero
         
         openButton = UIButton(type: .roundedRect)
         customButton()
@@ -121,8 +122,8 @@ class DetailView: UIView {
         openButton.titleLabel?.lineBreakMode = .byWordWrapping
         openButton.titleLabel?.textAlignment = .center
         openButton.setTitleColor(UIColor.white, for: .normal)
-        openButton.layer.cornerRadius = 6
-        openButton.backgroundColor = UIColor.orange.withAlphaComponent(0.6)
+        openButton.layer.cornerRadius = k.corner6
+        openButton.backgroundColor = UIColor.orange.withAlphaComponent(k.alpha06)
         openButton.tintColor = UIColor.brown
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector (tap))
         openButton.addGestureRecognizer(tapGesture)
@@ -136,64 +137,64 @@ class DetailView: UIView {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 20),
-            imageView.heightAnchor.constraint(equalToConstant: 250),
-            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)])
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: k.margin20),
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: k.margin20),
+            imageView.heightAnchor.constraint(equalToConstant: k.height250),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -k.margin20)])
         
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 0),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: k.margin00),
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: k.margin20),
+            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -k.margin20),
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor)])
         
         NSLayoutConstraint.activate([
-            artistLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 15),
-            artistLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            artistLabel.trailingAnchor.constraint(equalTo: artistValue.leadingAnchor, constant: -8)])
+            artistLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: k.margin15),
+            artistLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: k.margin20),
+            artistLabel.trailingAnchor.constraint(equalTo: artistValue.leadingAnchor, constant: -k.margin08)])
         
         NSLayoutConstraint.activate([
             artistValue.firstBaselineAnchor.constraint(equalTo: artistLabel.firstBaselineAnchor),
             artistValue.leadingAnchor.constraint(equalTo: artistLabel.trailingAnchor),
-            artistValue.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)])
+            artistValue.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -k.margin20)])
 
         NSLayoutConstraint.activate([
-            genreLabel.topAnchor.constraint(equalTo: artistValue.bottomAnchor, constant: 15),
-            genreLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            genreLabel.trailingAnchor.constraint(equalTo: genreValue.leadingAnchor, constant: -8)])
+            genreLabel.topAnchor.constraint(equalTo: artistValue.bottomAnchor, constant: k.margin15),
+            genreLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: k.margin20),
+            genreLabel.trailingAnchor.constraint(equalTo: genreValue.leadingAnchor, constant: -k.margin08)])
         
         NSLayoutConstraint.activate([
             genreValue.firstBaselineAnchor.constraint(equalTo: genreLabel.firstBaselineAnchor),
             genreValue.leadingAnchor.constraint(equalTo: genreLabel.trailingAnchor),
-            genreValue.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)])
+            genreValue.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -k.margin20)])
 
         NSLayoutConstraint.activate([
-            releaseLabel.topAnchor.constraint(equalTo: genreValue.bottomAnchor, constant: 15),
-            releaseLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            releaseLabel.trailingAnchor.constraint(equalTo: releaseValue.leadingAnchor, constant: -8)])
+            releaseLabel.topAnchor.constraint(equalTo: genreValue.bottomAnchor, constant: k.margin15),
+            releaseLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: k.margin20),
+            releaseLabel.trailingAnchor.constraint(equalTo: releaseValue.leadingAnchor, constant: -k.margin08)])
         
         NSLayoutConstraint.activate([
             releaseValue.firstBaselineAnchor.constraint(equalTo: releaseLabel.firstBaselineAnchor),
             releaseValue.leadingAnchor.constraint(equalTo: releaseLabel.trailingAnchor),
-            releaseValue.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)])
+            releaseValue.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -k.margin20)])
 
         NSLayoutConstraint.activate([
-            copyRightLabel.topAnchor.constraint(equalTo: releaseValue.bottomAnchor, constant: 15),
-            copyRightLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            copyRightLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: 50),
-            copyRightLabel.trailingAnchor.constraint(equalTo: copyRightValue.leadingAnchor, constant: -8)])
+            copyRightLabel.topAnchor.constraint(equalTo: releaseValue.bottomAnchor, constant: k.margin15),
+            copyRightLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: k.margin20),
+            copyRightLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: k.margin50),
+            copyRightLabel.trailingAnchor.constraint(equalTo: copyRightValue.leadingAnchor, constant: -k.margin08)])
         
         NSLayoutConstraint.activate([
             copyRightValue.firstBaselineAnchor.constraint(equalTo: copyRightLabel.firstBaselineAnchor),
             copyRightValue.leadingAnchor.constraint(equalTo: copyRightLabel.trailingAnchor),
-            copyRightValue.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)])
+            copyRightValue.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -k.margin20)])
         
         NSLayoutConstraint.activate([
-            openButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            openButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            openButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: k.margin20),
+            openButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: k.margin20),
             openButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            openButton.heightAnchor.constraint(equalToConstant: 40),
-            openButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20)])
+            openButton.heightAnchor.constraint(equalToConstant: k.margin40),
+            openButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -k.margin20)])
     }
     
     func setupAlbum(album: Albums, image: UIImage?) {

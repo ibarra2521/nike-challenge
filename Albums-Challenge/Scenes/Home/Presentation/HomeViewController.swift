@@ -13,13 +13,13 @@ protocol HomeDisplayLogic: class {
     func displayAlbumDetail(viewModel: HomeUseCases.Detail.ViewModel)
 }
 
-struct Constant {
-    
-    // MARK: - Struct for default values
-    struct Defautl {
-        static let rowHeight: CGFloat = 300.0
-    }
-}
+//struct Constant {
+//
+//    // MARK: - Struct for default values
+//    struct Defautl {
+//        static let rowHeight: CGFloat = 300.0
+//    }
+//}
 
 class HomeViewController: UIViewController, HomeDisplayLogic {
     
@@ -88,7 +88,7 @@ extension HomeViewController {
     // MARK: - Setup TableView
     private func setupTableView() {
         albumView.tableView.rowHeight = UITableView.automaticDimension
-        albumView.tableView.estimatedRowHeight = Constant.Defautl.rowHeight
+        albumView.tableView.estimatedRowHeight = Constants.rowHeight
         albumView.tableView.tableFooterView = UIView(frame: .zero)
         albumView.tableView.register(AlbumCell.self, forCellReuseIdentifier: AlbumCell.identifier)
         albumView.tableView.dataSource = self

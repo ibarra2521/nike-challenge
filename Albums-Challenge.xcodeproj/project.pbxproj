@@ -22,6 +22,7 @@
 		F35A70CA2366E9CB001FC52C /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A70C92366E9CB001FC52C /* CustomImageView.swift */; };
 		F35A70CC2366EA35001FC52C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A70CB2366EA35001FC52C /* ImageCache.swift */; };
 		F35A70CE2366EB61001FC52C /* AlbumDetailViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A70CD2366EB61001FC52C /* AlbumDetailViewController+extensions.swift */; };
+		F35A70D12366EF21001FC52C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A70D02366EF21001FC52C /* Constants.swift */; };
 		F37D685B2363F366002D9BA4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D685A2363F366002D9BA4 /* Response.swift */; };
 		F37D685D2363F400002D9BA4 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D685C2363F400002D9BA4 /* Feed.swift */; };
 		F37D685F2363F4A3002D9BA4 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D685E2363F4A3002D9BA4 /* Author.swift */; };
@@ -70,6 +71,7 @@
 		F35A70C92366E9CB001FC52C /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		F35A70CB2366EA35001FC52C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		F35A70CD2366EB61001FC52C /* AlbumDetailViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumDetailViewController+extensions.swift"; sourceTree = "<group>"; };
+		F35A70D02366EF21001FC52C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F37D685A2363F366002D9BA4 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		F37D685C2363F400002D9BA4 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		F37D685E2363F4A3002D9BA4 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		F342AB472363EB24001BFA6A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F35A70CF2366EF07001FC52C /* Constants */,
 				F37D686E23641393002D9BA4 /* Extensions */,
 				F37D6869236400B1002D9BA4 /* Views */,
 			);
@@ -216,6 +219,14 @@
 				F37D68672363FEE9002D9BA4 /* NetworkManager.swift */,
 			);
 			path = Worker;
+			sourceTree = "<group>";
+		};
+		F35A70CF2366EF07001FC52C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F35A70D02366EF21001FC52C /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		F37D6869236400B1002D9BA4 /* Views */ = {
@@ -396,6 +407,7 @@
 				F37D686B236400C5002D9BA4 /* Loading.swift in Sources */,
 				F37D687523642083002D9BA4 /* HomeViewController+TableView.swift in Sources */,
 				F342AB262363DD05001BFA6A /* AppDelegate.swift in Sources */,
+				F35A70D12366EF21001FC52C /* Constants.swift in Sources */,
 				F3FAE0C0236507610036E0CA /* AlbumDetailViewController.swift in Sources */,
 				F342AB532363ECD5001BFA6A /* HomeRouter.swift in Sources */,
 				F342AB542363ECD5001BFA6A /* HomeViewController.swift in Sources */,
