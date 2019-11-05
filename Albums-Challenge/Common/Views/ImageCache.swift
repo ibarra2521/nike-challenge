@@ -10,13 +10,15 @@ import UIKit
 
 class ImageCache {
     private let cache = NSCache<NSString, UIImage>()
-    private var observer: NSObjectProtocol!
+    private var observer: NSObjectProtocol?
     
     static let shared = ImageCache()
     
     private init() {
-        observer = NotificationCenter.default.addObserver(forName: UIApplication.didReceiveMemoryWarningNotification, object: nil, queue: nil) { [weak self] notification in
-            self?.cache.removeAllObjects()
+        if let _ = observer {
+            observer = NotificationCenter.default.addObserver(forName: UIApplication.didReceiveMemoryWarningNotification, object: nil, queue: nil) { [weak self] notification in
+                self?.cache.removeAllObjects()
+            }
         }
     }
     
